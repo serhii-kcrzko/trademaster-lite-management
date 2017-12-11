@@ -36,7 +36,7 @@ const config = {
   },
   test: {
     mongo: {
-      uri: 'mongodb://tml-client:sergiq2403@ds163595.mlab.com:63595/heroku_04ds40rr',
+      uri: process.env.MONGODB_URI_TEST,
       options: {
         debug: false
       }
@@ -44,7 +44,7 @@ const config = {
   },
   development: {
     mongo: {
-      uri: 'mongodb://tml-client:sergiq2403@ds163595.mlab.com:63595/heroku_04ds40rr',
+      uri: process.env.MONGODB_URI_TEST,
       options: {
         debug: true
       }
@@ -54,7 +54,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://tml-client:sergiq2403@ds163595.mlab.com:63595/heroku_04ds40rr'
+      uri: process.env.MONGODB_URI
     }
   }
 }
