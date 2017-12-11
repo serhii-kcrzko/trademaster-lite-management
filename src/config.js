@@ -23,7 +23,7 @@ const config = {
   all: {
     env: process.env.NODE_ENV || 'development',
     root: path.join(__dirname, '..'),
-    port: process.env.PORT || 9000,
+    port: process.env.PORT || 8080,
     ip: process.env.IP || '127.0.0.1',
     masterKey: requireProcessEnv('MASTER_KEY'),
     mongo: {
